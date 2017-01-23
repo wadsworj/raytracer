@@ -1,0 +1,70 @@
+> CIS*4800 - Assignment 4 - Ray Tracing
+> -------------------------------------
+> Due: Monday, April 1. They will not be marked until Monday April 4.
+> 
+> Write a program which performs ray tracing of a scene containing simple
+> objects. 
+> 
+> Use OpenGL for the 2D display of the image.
+> 
+> The q key should exit your program.
+> 
+> Part I - Read the Scene File 
+> ----------------------------
+> Read a text file that describes the structure of the scene. The file will
+> list the shapes and lights in the scene. For this assignment there
+> will only be one light source(one light line). There can be any number
+> of sphere lines. The file has the format:
+> 
+> light    x  y  z    r  g  b
+> sphere   x  y  z  R  r  g  b
+>    ...
+> 
+> 
+> where x,y,z are the centre of the sphere or the location of the light,
+> r,g,b is the colour, R is the radius of the sphere.
+> 
+> Store the light and object information in your program.
+> 
+> There can be any amount of whitespace between the characters on a line.
+> 
+> 
+> Part II - Ray Tracing
+> ----------------------
+> Draw the scene described in the text file using ray tracing to determine
+> the visibility and shading. Make the display window resolution at least
+> 1024x768. Cast one ray per pixel. Determine if the ray intersects with
+> objects in the scene using an algebraic ray-sphere intersection test. 
+> Make the background black.
+> 
+> New Note: Calculate the ambient, diffuse, and specular lighting.
+> 
+> Part III - Shadow Rays
+> ----------------------
+> Cast shadow rays from intersections with objects to determine if the light
+> will reach all points on the object. Use only ambient lighting on surfaces
+> which appear in the shadows.
+> 
+> 
+> Handin Notes
+> ------------
+> Submit the assignment using the dropbox for assignment 4 in Courselink.
+> 
+> Include a readme.txt which contains your name, student number, and a short
+> description of any parts of the program which do not function correctly.
+> 
+> Your code must run on the Macs in Reynolds 114.
+> 
+> Submit your source files necessary to compile your code, a makefile that
+> will compile the code, and any other file necessary to build the project.
+> The assignment will be compiled following these steps by:
+>         -unpacking your submission (tar or zip)
+>         -typing make
+>   -run a4 <filename> from the command line
+> Any executables in the directory will be removed before make is run.
+ 
+ 
+ 
+
+
+
